@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #012d5b;
+    }
+
+    .js-message {
+      margin-top: 20px;
+    }
+
+    .expense-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f1f1f1;
+      margin-bottom: 8px;
+      padding: 8px 10px;
+      border-radius: 5px;
+    }
+
+    .delete-btn {
+      background: crimson;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+
+    .total {
+      margin-top: 15px;
+      font-weight: bold;
+      text-align: right;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Track Your Expenses!</h1>
+    <input type="text" placeholder="Expense Description" class="description">
+    <input type="number" placeholder="Amount(Rs.)" class="input-amount">
+    <button class="add-btn">Add</button>
+
+    <div class="js-message"></div>
+    <div class="total">Total: Rs.0</div>
+  </div>
+
+  <script src="scripts/expenseTracker.js"></script>
+</body>
+</html>
